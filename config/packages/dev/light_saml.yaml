@@ -1,0 +1,14 @@
+light_saml_symfony_bridge:
+    own:
+        entity_id: '%env(ENTITY_ID)%'
+        credentials:
+            -
+                certificate: "%kernel.root_dir%/../src/Sso/saml.crt"
+                key:         "%kernel.root_dir%/../src/Sso/saml.pem"
+                password:    ~
+    party:
+        idp:
+            files:
+                - "%kernel.root_dir%/../src/Sso/%env(PARTY_IDP)%"
+    store:
+        id_state: id_store
