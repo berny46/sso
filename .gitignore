@@ -15,4 +15,8 @@
 .phpunit.result.cache
 /phpunit.xml
 ###< symfony/phpunit-bridge ###
-/src/Sso/
+
+/src/Sso/saml.pem
+/src/Sso/saml.crt
+/src/Sso/idpPre-FederationMetadata.xml
+
